@@ -15,5 +15,6 @@ EditorBuildSettings:
     path: Assets/01. Scenes/FinalTest/FinalEnding.unity
     guid: 00c52a038e3520445bac946e7377f526
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 7d16f421cf3553343b427c155fb1bc50, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 68dd293eee0084b4796b0fadc5bb533a, type: 3}
   m_UseUCBPForAssetBundles: 0
