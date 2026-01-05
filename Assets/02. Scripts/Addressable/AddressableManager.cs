@@ -16,7 +16,7 @@ public class AddressableManager : MonoBehaviour
             if (e.type == ETowerType.Count) continue;
             if (e.prefab == null) continue;
 
-            AddressablePoolManager.Instance.Register(e.type, e.prefab, e.prewarm);
+            TowerPoolManager.Instance.Register(e.type, e.prefab, e.prewarm);
         }
 
         if (_preloadAllOnStart)
@@ -27,7 +27,7 @@ public class AddressableManager : MonoBehaviour
                 if (e.type != ETowerType.Count && e.prefab != null)
                     types.Add(e.type);
 
-            await AddressablePoolManager.Instance.PreloadAsync(types);
+            await TowerPoolManager.Instance.PreloadAsync(types);
         }
     }
 }

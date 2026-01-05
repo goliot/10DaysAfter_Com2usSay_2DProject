@@ -198,7 +198,7 @@ public class GridBuildingSystem : Singleton<GridBuildingSystem>
         ClearPreviewTiles();
         if (_tempTower != null)
         {
-            TowerPoolManager.Instance.ReturnObject(_tempTower.gameObject, _tempTower.TowerType);
+            TowerPoolManager.Instance.Return(_tempTower.TowerType, _tempTower.gameObject);
             _tempTower = null;
             _tempBuilding = null;
         }

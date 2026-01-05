@@ -134,6 +134,6 @@ public class TowerRoot : Building
         explode.transform.position = transform.position;
         SoundManager.Instance.PlaySfx(ESfxType.BuildingExplode);
         
-        TowerPoolManager.Instance.ReturnObject(gameObject, TowerType);
+        TowerPoolManager.Instance.Return(TowerType, gameObject);
     }
 }
