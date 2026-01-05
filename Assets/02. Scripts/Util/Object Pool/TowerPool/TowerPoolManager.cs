@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using System.Threading.Tasks;
-using static UnityEditor.PlayerSettings;
 
 public class TowerPoolManager : Singleton<TowerPoolManager>
 {

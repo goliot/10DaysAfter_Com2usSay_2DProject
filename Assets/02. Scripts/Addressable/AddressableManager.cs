@@ -9,8 +9,6 @@ public class AddressableManager : MonoBehaviour
 
     private async void Start()
     {
-        await Addressables.InitializeAsync().Task;
-
         foreach (var e in _towers)
         {
             if (e.type == ETowerType.Count) continue;

@@ -1,6 +1,9 @@
-using UnityEditor.SceneManagement;
-using UnityEditor;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using UnityEditor;
+using UnityEditor.SceneManagement;
+#endif
 
 public class ObstacleGenerate : MonoBehaviour
 {
@@ -12,20 +15,25 @@ public class ObstacleGenerate : MonoBehaviour
     [ContextMenu("Spawn In Circle")]
     void SpawnInCircle()
     {
+#if !UNITY_EDITOR
+        return; // 런타임/빌드에서는 실행 불가(에디터 툴이니까)
+#else
+        // Undo는 "변경 전"에 등록해야 제대로 되돌릴 수 있음
+        Undo.RegisterFullObjectHierarchyUndo(gameObject, "Spawn Obstacles");
+
         // 기존 자식 제거
         for (int i = transform.childCount - 1; i >= 0; i--)
         {
             DestroyImmediate(transform.GetChild(i).gameObject);
         }
 
-#if UNITY_EDITOR
-        Undo.RegisterFullObjectHierarchyUndo(this.gameObject, "Clear Old Obstacles");
-#endif
-
         for (int i = 0; i < count; i++)
         {
-            GameObject obstaclePrefab = obstaclePrefabs[Random.Range(0, obstaclePrefabs.Length)];
-            GameObject obstacle = (GameObject)GameObject.Instantiate(obstaclePrefab);
+            GameObject prefab = obstaclePrefabs[Random.Range(0, obstaclePrefabs.Length)];
+
+            // 에디터에서는 Prefab 연결 유지하는 Instantiate가 더 좋음(Undo도 깔끔)
+            GameObject obstacle = (GameObject)PrefabUtility.InstantiatePrefab(prefab);
+            Undo.RegisterCreatedObjectUndo(obstacle, "Spawn Obstacle");
 
             obstacle.transform.SetParent(transform);
 
@@ -35,14 +43,9 @@ public class ObstacleGenerate : MonoBehaviour
             Vector3 pos = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius, 0);
 
             obstacle.transform.position = transform.position + pos;
-
-#if UNITY_EDITOR
-            Undo.RegisterCreatedObjectUndo(obstacle, "Spawn Obstacle");
-#endif
         }
 
-#if UNITY_EDITOR
-        EditorUtility.SetDirty(this.gameObject); // 변경 플래그 설정
+        EditorUtility.SetDirty(gameObject);
         EditorSceneManager.MarkSceneDirty(UnityEngine.SceneManagement.SceneManager.GetActiveScene());
 #endif
     }

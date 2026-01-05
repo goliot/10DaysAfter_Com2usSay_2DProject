@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/01. Scenes/FinalTest/Download.unity
+    guid: d66a8b2746067e64a8adb3a4e5c3ae6e
+  - enabled: 1
     path: Assets/01. Scenes/FinalTest/FinalTitle.unity
     guid: 07ab9589654309346a04c74cc57ae627
   - enabled: 1
@@ -14,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01. Scenes/FinalTest/FinalEnding.unity
     guid: 00c52a038e3520445bac946e7377f526
+  - enabled: 1
+    path: Assets/01. Scenes/FinalTest/Loading.unity
+    guid: 0406c017a77974b4f8c73ce8999ef8f8
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 7d16f421cf3553343b427c155fb1bc50, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 68dd293eee0084b4796b0fadc5bb533a, type: 3}
