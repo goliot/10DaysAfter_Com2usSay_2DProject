@@ -1782,6 +1782,86 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: bgmClipRefs.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: bgmClipRefs.Array.data[0].m_AssetGUID
+      value: c86b32c6417b8d84a842924689bfeb81
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: bgmClipRefs.Array.data[1].m_AssetGUID
+      value: 071f4cdf3b7c86a4789ff5201bfd8e68
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: bgmClipRefs.Array.data[2].m_AssetGUID
+      value: 9caafc7cfa6cd24409e0637cbd827706
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: bgmClipRefs.Array.data[3].m_AssetGUID
+      value: e6d1a1176442a5d4e9ed7eaca768dc67
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: bgmClipRefs.Array.data[4].m_AssetGUID
+      value: 1730dc20c383379409e5f0a7d6219fb2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[0].m_AssetGUID
+      value: 5a5c1c9ff44839447b3c9beb08a5b9f7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[1].m_AssetGUID
+      value: 8e1141f653dc6724fb0102a361f8acd0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[2].m_AssetGUID
+      value: fee61a753f1343c46874f5b45efa0495
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[3].m_AssetGUID
+      value: 62ff70722488dd14f9ac86234e37cbb7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[4].m_AssetGUID
+      value: 30da25de867402c4fb43c70a0b764c56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[5].m_AssetGUID
+      value: 2555489bcc8272042a2fee0f5697feb4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[6].m_AssetGUID
+      value: aaeb7fcf894c51c44bfba57dbf2ab334
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[7].m_AssetGUID
+      value: 216955be509738d4aad9e067ceac3597
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[8].m_AssetGUID
+      value: 8b493002c130e4a4482839d11e569ae3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[9].m_AssetGUID
+      value: df61259668ea72c48a306ea46a3c9948
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[10].m_AssetGUID
+      value: ff2d2144135b1224bb7828e2cba283b4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[11].m_AssetGUID
+      value: b59afc54d80bad345831544b9143b8a6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297665227272696241, guid: 8c5234e612ce72840a50d00c0c3592fe, type: 3}
+      propertyPath: sfxClipRefs.Array.data[12].m_AssetGUID
+      value: af0f358703ba4934ba8f3c6675166c76
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 1730dc20c383379409e5f0a7d6219fb2
+timeCreated: 1509482952
+licenseType: Store
+AudioImporter:
+  serializedVersion: 6
+  defaultSettings:
+    loadType: 0
+    sampleRateSetting: 0
+    sampleRateOverride: 44100
+    compressionFormat: 1
+    quality: 1
+    conversionMode: 0
+  platformSettingOverrides: {}
+  forceToMono: 0
+  normalize: 1
+  preloadAudioData: 1
+  loadInBackground: 0
+  ambisonic: 0
+  3D: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103835
+  packageName: Adventure Music Collection
+  packageVersion: 1.1
+  assetPath: Assets/Adventure Music/Ambience & Atmosphere/campfire_loop.wav
+  uploadId: 388529

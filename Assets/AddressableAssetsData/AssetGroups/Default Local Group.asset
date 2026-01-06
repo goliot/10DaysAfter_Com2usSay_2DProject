@@ -14,7 +14,118 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Default Local Group
   m_GUID: f6c5936c073084b42a198661ef8e6e6c
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 071f4cdf3b7c86a4789ff5201bfd8e68
+    m_Address: Assets/06. Sounds/Adventure Music/Action & Spionage/battle_loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1730dc20c383379409e5f0a7d6219fb2
+    m_Address: Assets/06. Sounds/Adventure Music/Ambience & Atmosphere/campfire_loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 216955be509738d4aad9e067ceac3597
+    m_Address: Assets/06. Sounds/FORGE3D/Sci-Fi Sounds/Explosion/explosion_large_mix_003.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2555489bcc8272042a2fee0f5697feb4
+    m_Address: Assets/06. Sounds/Gun & Explosion Sounds/Gun 03/Gun 3_6.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30da25de867402c4fb43c70a0b764c56
+    m_Address: Assets/06. Sounds/typing.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5a5c1c9ff44839447b3c9beb08a5b9f7
+    m_Address: Assets/06. Sounds/FORGE3D/Sci-Fi Sounds/Weapon/weapon_gatling_002.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 62ff70722488dd14f9ac86234e37cbb7
+    m_Address: Assets/06. Sounds/Gun & Explosion Sounds/Explosions/Medium Explosion
+      05.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8b493002c130e4a4482839d11e569ae3
+    m_Address: Assets/06. Sounds/Gun & Explosion Sounds/Gun 05 (Semi-Automatic)/Gun
+      5 Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8e1141f653dc6724fb0102a361f8acd0
+    m_Address: Assets/06. Sounds/FORGE3D/Sci-Fi Sounds/Weapon/weapon_mortar_006.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9caafc7cfa6cd24409e0637cbd827706
+    m_Address: Assets/06. Sounds/battle_test.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aaeb7fcf894c51c44bfba57dbf2ab334
+    m_Address: Assets/06. Sounds/FORGE3D/Sci-Fi Sounds/Impact/impact_metal_003.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: af0f358703ba4934ba8f3c6675166c76
+    m_Address: Assets/06. Sounds/outro.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b59afc54d80bad345831544b9143b8a6
+    m_Address: Assets/06. Sounds/beep.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c86b32c6417b8d84a842924689bfeb81
+    m_Address: Assets/06. Sounds/Adventure Music/Action & Spionage/mischief_loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df61259668ea72c48a306ea46a3c9948
+    m_Address: Assets/06. Sounds/staticss.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e6d1a1176442a5d4e9ed7eaca768dc67
+    m_Address: Assets/06. Sounds/Adventure Music/Ambience & Atmosphere/cemetery_loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fee61a753f1343c46874f5b45efa0495
+    m_Address: Assets/06. Sounds/Gun & Explosion Sounds/Impacts/Rock Debris Small
+      02.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff2d2144135b1224bb7828e2cba283b4
+    m_Address: Assets/06. Sounds/static2.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - sounds
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ac67305fc9c8e034d8f876adeaf05a4c, type: 2}
   m_SchemaSet:

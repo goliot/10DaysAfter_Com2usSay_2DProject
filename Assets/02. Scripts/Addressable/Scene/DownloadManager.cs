@@ -39,7 +39,7 @@ public class DownloadManager : MonoBehaviour
 
     private IEnumerator CheckUpdateFiles()
     {
-        var labels = new List<string>() { /*DefaultLabel.labelString,*/ TowerLabel.labelString };
+        var labels = new List<string>() { DefaultLabel.labelString, TowerLabel.labelString };
 
         _patchSize = default;
 
@@ -99,7 +99,7 @@ public class DownloadManager : MonoBehaviour
 
     private IEnumerator PatchFiles()
     {
-        var labels = new List<string>() { /*DefaultLabel.labelString,*/ TowerLabel.labelString };
+        var labels = new List<string>() { DefaultLabel.labelString, TowerLabel.labelString };
 
         foreach (var label in labels)
         {
