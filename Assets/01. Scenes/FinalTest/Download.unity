@@ -1443,10 +1443,9 @@ MonoBehaviour:
   DownSlider: {fileID: 1139038079}
   SizeInfoText: {fileID: 1969148901}
   DownValueText: {fileID: 773891150}
-  DefaultLabel:
-    m_LabelString: default
-  TowerLabel:
-    m_LabelString: tower
+  Labels:
+  - m_LabelString: tower
+  - m_LabelString: sounds
 --- !u!1 &1843286121
 GameObject:
   m_ObjectHideFlags: 0

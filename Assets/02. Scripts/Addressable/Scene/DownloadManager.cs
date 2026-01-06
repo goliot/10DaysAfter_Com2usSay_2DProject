@@ -16,8 +16,7 @@ public class DownloadManager : MonoBehaviour
     public TextMeshProUGUI DownValueText;
 
     [Header("# Label")]
-    public AssetLabelReference DefaultLabel;
-    public AssetLabelReference TowerLabel;
+    public List<AssetLabelReference> Labels;
 
     private long _patchSize;
     private Dictionary<string, long> _patchMap = new Dictionary<string, long>();
@@ -39,11 +38,9 @@ public class DownloadManager : MonoBehaviour
 
     private IEnumerator CheckUpdateFiles()
     {
-        var labels = new List<string>() { DefaultLabel.labelString, TowerLabel.labelString };
-
         _patchSize = default;
 
-        foreach(var label in labels)
+        foreach(var label in Labels)
         {
             var handle = Addressables.GetDownloadSizeAsync(label);
 
@@ -99,9 +96,7 @@ public class DownloadManager : MonoBehaviour
 
     private IEnumerator PatchFiles()
     {
-        var labels = new List<string>() { DefaultLabel.labelString, TowerLabel.labelString };
-
-        foreach (var label in labels)
+        foreach (var label in Labels)
         {
             var handle = Addressables.GetDownloadSizeAsync(label);
 
@@ -109,7 +104,7 @@ public class DownloadManager : MonoBehaviour
 
             if(handle.Result != decimal.Zero)
             {
-                StartCoroutine(DownloadLabel(label));
+                StartCoroutine(DownloadLabel(label.labelString));
             }
         }
 
