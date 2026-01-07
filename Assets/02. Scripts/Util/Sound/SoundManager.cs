@@ -30,8 +30,8 @@ public class SoundManager : Singleton<SoundManager> // 문의 : 수민
     [SerializeField, Range(0f, 1f)] private float sfxVolume = 0.5f;
     [SerializeField, Min(1)] private int channels = 15;
 
-    private AudioSource bgmPlayer;          // BGM은 단일
-    private AudioSource[] sfxPlayers;       // SFX는 여러개
+    private AudioSource bgmPlayer;         
+    private AudioSource[] sfxPlayers;       
     private int channelIndex;
 
     [Header("# PlayingInfo")]
@@ -98,7 +98,6 @@ public class SoundManager : Singleton<SoundManager> // 문의 : 수민
         bgmPlayer.playOnAwake = false;
         bgmPlayer.loop = true;
 
-        // 용량/연산 최적화 (기존 코드 유지)
         bgmPlayer.dopplerLevel = 0.0f;
         bgmPlayer.reverbZoneMix = 0.0f;
 
@@ -118,7 +117,6 @@ public class SoundManager : Singleton<SoundManager> // 문의 : 수민
 
     private void LoadVolumesFromPrefs()
     {
-        // 기존 로직(1 - value) 유지 + 키 통일
         bgmVolume = 1.0f - PlayerPrefs.GetFloat(KEY_BGM, 1.0f - bgmVolume);
         sfxVolume = 1.0f - PlayerPrefs.GetFloat(KEY_SFX, 1.0f - sfxVolume);
     }
@@ -145,7 +143,6 @@ public class SoundManager : Singleton<SoundManager> // 문의 : 수민
     }
 
     #region BGM
-    // 기존 시그니처 유지: 내부에서 async로 처리
     public void PlayBgm(EBgmType bgm)
     {
         _ = PlayBgmInternalAsync(bgm);
@@ -244,11 +241,6 @@ public class SoundManager : Singleton<SoundManager> // 문의 : 수민
             return null;
         }
 
-        // (선택) 원격이면 여기서 의존성 다운로드를 먼저 걸고 진행률 UI 붙일 수 있음
-        // var d = reference.DownloadDependenciesAsync();
-        // await d.Task;
-        // Addressables.Release(d);
-
         var handle = reference.LoadAssetAsync();
         await handle.Task;
 
@@ -286,7 +278,6 @@ public class SoundManager : Singleton<SoundManager> // 문의 : 수민
 
     public void OnVolumeChanged(AudioType type, float value)
     {
-        // 기존 저장 방식 유지(1 - value)
         PlayerPrefs.SetFloat(type == AudioType.BGM ? KEY_BGM : KEY_SFX, 1.0f - value);
 
         if (type == AudioType.BGM)
